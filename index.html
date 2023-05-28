@@ -99,18 +99,19 @@
       <div class="col-12 col-sm-6 mx-auto text-center">
           <h3>Suscribite!!!!</h3>
           <br>
-          <form action="">
+          <form id="form" action="https://formspree.io/f/moqzzyeq" method="POST" class="form">
             <label for="email">
               <p>Agrega tu correo y recibiras nuestras ofertas!</p>
             </label>
             <div class="d-flex">
               <div class="flex-fill mr-2">
-
-                <input type="email" id="email" class="form-control" />
+                <input name="email" type="text" id="email" required placeholder="nombre@gmail.com" class="form-control">
               </div>
-              <button class="btn btn-dark" onclick="mostrarMensaje()">
+              <!--<button id="botonenviar" type="submit" class="btn btn-dark" onclick="mostrarMensaje()">-->
+                <button id="botonenviar" type="submit" class="btn primary full">
                 Enviar
               </button>
+              <a href="mailto:pbortolotti@gmail.com" id="idform"></a>
             </div>
           </form>
         </div>
@@ -120,7 +121,7 @@
 
   </section>
 
-  <!--Tira de comidas-->
+  <!--Tira de Ofertas-->
   <section>
 
     <div class="container mt-5 mb-5">
