@@ -21,7 +21,7 @@ font-family: 'Staatliches', cursive;
 
 .cover{
     height: 400px;
-    background-image: url(./img/portada.jpg);
+    background-image: url(../img/portada.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -93,7 +93,7 @@ font-family: 'Staatliches', cursive;
 /*Cervezas*/
 
 .img-portada-cervezas {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/portada.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/portada.jpg);
     height: 500px;
     width: 100%;
     background-size: cover;
@@ -224,7 +224,7 @@ font-family: 'Staatliches', cursive;
 /*Menu*/
 
 .img-portada-menu {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/comprar.JPG);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/comprar.JPG);
     height: 500px;
     width: 100%;
     background-size: cover;
