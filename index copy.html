@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URBAN STREET</title>
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Staatliches&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" href="./img/cerveza.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!--Barra de navegacion-->
+  <div id="navbarContainer"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: white;">
+        URBAN STREET
+      </a>
+      <ul class="nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mapa">Ubicación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Encabezado-->
+  <header>
+    <div class="cover d-flex justify-content-center align-items-center flex-column">
+      <h1 id="id1" style="display: none; color: white; " ></h1>
+      <p style="color: white;">COMPRA SEGURO. DESDE TU CASA</p>
+    </div>
+  </header>
+
+
+
+  <!--Tarjetas-->
+  <section>
+    <div class="container mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+          <div class="card">
+            <a href="./cards/cervezas.html">
+              <div title="variedad de cervezas" class="card-img"
+                style="background-image:url(https://res.cloudinary.com/turi4/image/upload/v1631039096/cervezas-artesnales_ydn787.jpg) ">
+              </div>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">PRODUCTOS</h5>
+              <p class="card-text">Descubre nuestros productos</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+          <div class="card">
+            <a href="./cards/menu.html">
+              <div title="variedad de cervezas" class="card-img"
+                style="background-image:url(https://res.cloudinary.com/turi4/image/upload/v1635455363/menu_pqp91o.jpg)">
+              </div>
+            </a>
+
+            <div class="card-body">
+              <h5 class="card-title">Variedad Gastronomica</h5>
+              <p class="card-text">Ingresa para ver nuestra carta, podes pedir tu envío a domicilio.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+          <div class="card">
+            <a href="./cards/equipo.html">
+              <div title="variedad de cervezas" class="card-img"
+                style="background-image:url(https://res.cloudinary.com/turi4/image/upload/v1635455760/nosotros_oim0ao.jpg)">
+              </div>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Equipo</h5>
+              <p class="card-text">Conocé las personas que estamos detras de todo este imprendimiento increíble.</p>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+      <div class="col-12 col-sm-6 mx-auto text-center">
+          <h3>Suscribite!!!!</h3>
+          <br>
+          <form action="">
+            <label for="email">
+              <p>Agrega tu correo y recibiras nuestras ofertas!</p>
+            </label>
+            <div class="d-flex">
+              <div class="flex-fill mr-2">
+
+                <input type="email" id="email" class="form-control" />
+              </div>
+              <button class="btn btn-dark" onclick="mostrarMensaje()">
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--Tira de comidas-->
+  <section>
+
+    <div class="container mt-5 mb-5">
+      <h2> Aprovechá nuestras ofertas de delivery por whatsapp</h2>
+      <div class="food-stripe">
+        <div class="stripe-container">
+          <div class="card">
+            <div title="Papitas" class="card-img"
+              style="background-image:url(https://res.cloudinary.com/turi4/image/upload/v1630421116/papitas_fv0evi.jpg)">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">1-Papas fritas con cheddar y panceta-$350</h5>
+              <a onclick="mensajePromo()" class="btn btn-warning btn-sm " role="button" aria-pressed="true"><b>Pedir
+                  Delivery</b></a>
+
+            </div>
+          </div>
+          <div class="card">
+            <div title="Picada" class="card-img"
+              style="background-image:url(https://res.cloudinary.com/turi4/image/upload/v1631041153/picada_owjcwt.jpg)">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">2-Picada Completa-$950</h5>
+              <a onclick="mensajePromo()" class="btn btn-warning btn-sm " role="button" aria-pressed="true"><b>Pedir
+                  Delivery</b></a>
+            </div>
+          </div>
+          <div class="card">
+            <div title="Milanesa" class="card-img"
+              style="background-image:url(https://res.cloudinary.com/turi4/image/upload/v1631040934/milanesa_qmssmh.jpg)">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">3-Milanesa napolitana con papas fritas-$800</h5>
+              <a onclick="mensajePromo()" class="btn btn-warning btn-sm " role="button" aria-pressed="true"><b>Pedir
+                  Delivery</b></a>
+            </div>
+          </div>
+          <div class="card">
+            <div title="Hamburguesa" class="card-img"
+              style="background-image:url(https://res.cloudinary.com/turi4/image/upload/v1630421115/hamburguesa_n5jwec.jpg)">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">4-Hamburguesa birrera-$850</h5>
+              <a onclick="mensajePromo()" class="btn btn-warning btn-sm " role="button" aria-pressed="true"><b>Pedir
+                  Delivery</b></a>
+            </div>
+          </div>
+          <div class="card">
+            <div title="pizza" class="card-img"
+              style="background-image:url(https://res.cloudinary.com/turi4/image/upload/v1631040754/pizza_tyz4y9.jpg)">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">5-Pizza Turienza!-$900</h5>
+              <a onclick="mensajePromo()" class="btn btn-warning btn-sm " role="button" aria-pressed="true"><b>Pedir
+                  Delivery</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5 mb-5" id="mapa">
+      <h4>
+        Pueden visitarnos en nuesto local  
+      </h4>
+      <p>Juan B. Justo 667, Río Colorado, Río Negro</p>
+
+      <div class="resposive-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d775.2581826463222!2d-64.09871703043778!3d-38.99174935587559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ef9c624677be0b%3A0x4c40aaeb644f7bbe!2sJuan%20B.%20Justo%20667%2C%20R%C3%ADo%20Colorado%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1685244082168!5m2!1ses-419!2sar" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!--Scroll button-->
+  <button class="scroll-top-btn hidden">&#11014;</button>
+
+  <!--Contacto Whatsapp-->
+
+  <a id="app-whatsapp" target="blanck"
+    href="https://api.whatsapp.com/send?phone=5491169618235&amp;text-hola!&nbsp;dejamé&nbsp;tu&nbsp;mensaje.">
+    <i class="fa fa-whatsapp"></i>
+  </a>
+
+  <!--Footer-->
+  <div id="footerContainer"></div>
+  <footer>
+    <div class="footer-content">
+      <h3>URBAN STREET</h3>
+      <p>Conoce nuestras redes sociales:</p>
+      <ul class="socials">
+        <li><a href="https://www.facebook.com/urbanstreetok"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com/urbanstreetok"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+      <div class="footer-bottom">
+        <p>Copyright &copy;2023 URBAN STREET , diseñado por <span>TPO CODO A CODO COM 23009</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!--Scripts-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
