@@ -61,12 +61,26 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
 //Funcion Formulario
 const $form = document.querySelector('#form')
 $form.addEventListener('submit', handleSubmit)
 
 async function handleSubmit(event) {
   event.preventDefault()
+  var nombre = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  if (nombre.length === 0 ) {
+    alert("Por favor, completa el nombre.");
+    return; 
+  }
+
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  if (!emailPattern.test(email)) {
+    alert("Tiene que introducir un mail Valido.");
+    return; 
+  }
   const form = new FormData(this)
   const response = await fetch(this.action, {
     method: this.method,
